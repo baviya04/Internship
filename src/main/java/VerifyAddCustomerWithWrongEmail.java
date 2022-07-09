@@ -15,7 +15,7 @@ public class VerifyAddCustomerWithWrongEmail {
         driver.findElement(By.xpath("/html/body/div/div/div/div/div[2]/div[2]/div/form/div[3]/div[2]/button")).click();
         driver.get("http://3.13.126.58/AMS3.0/home");
 
-        //
+
         driver.findElement(By.xpath("/html/body/div[2]/div/nav/ul/li[4]/a")).click();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id=\"customers_add\"]")).click();
