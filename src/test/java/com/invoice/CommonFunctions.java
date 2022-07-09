@@ -5,6 +5,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.Augmenter;
 
 import javax.imageio.ImageIO;
 import java.io.File;
@@ -13,7 +14,7 @@ import java.time.temporal.ChronoUnit;
 
 public class CommonFunctions {
 
-    public static WebDriver driver;
+    public WebDriver driver;
 
     public void openBrowser(){
 
@@ -23,10 +24,10 @@ public class CommonFunctions {
             driver.get("http://3.13.126.58/AMS3.0/home");
             driver.manage().window().maximize();
             //screenshots//
-            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 
-        }
+
+    }
 
 
 
