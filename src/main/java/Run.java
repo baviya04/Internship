@@ -25,7 +25,7 @@ public class Run {
         System.out.println(driver5);
         WebDriver driver6=verifyAddNewUser.validatePasswordLength(driver5);
         System.out.println(driver6);
-        System.out.println("Add nwew user tests completed!");
+        System.out.println("Add new user tests completed!");
         WebDriver driver7=login.navigateToListProductsPage(sameDriver);
         System.out.println("Navigation to list product page " + driver7);
         VerifyListProductPage listPage=new VerifyListProductPage();
